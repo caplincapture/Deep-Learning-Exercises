@@ -2,6 +2,8 @@
 
 In this notebook, we implement a recurrent neural network that performs sentiment analysis in TensorFlow and Numpy. 
 The architecture for this network is shown below.
+
+
 <img src="assets/network_diagram.png" width=400px>
 
 # Code Example
@@ -14,7 +16,7 @@ Provides an RNN implementation on movie review sentiment
 
 # Tests
 
-test_acc = []
+``` test_acc = []
 with tf.Session(graph=graph) as sess:
     saver.restore(sess, tf.train.latest_checkpoint('/output/checkpoints'))
     test_state = sess.run(cell.zero_state(batch_size, tf.float32))
@@ -25,7 +27,8 @@ with tf.Session(graph=graph) as sess:
                 initial_state: test_state}
         batch_acc, test_state = sess.run([accuracy, final_state], feed_dict=feed)
         test_acc.append(batch_acc)
-    print("Test accuracy: {:.3f}".format(np.mean(test_acc)))
+    print("Test accuracy: {:.3f}".format(np.mean(test_acc))) ```
+    
 
 # Twitter
 
