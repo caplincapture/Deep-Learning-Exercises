@@ -6,10 +6,6 @@ The architecture for this network is shown below.
 
 <img src="assets/network_diagram.png" width=400px>
 
-# Code Example
-
- Make sure the API you are showing off is obvious, and that your code is short and concise.
-
 # Motivation
 
 Provides an RNN implementation on movie review sentiment
