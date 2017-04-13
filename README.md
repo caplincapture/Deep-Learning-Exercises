@@ -27,10 +27,11 @@ with tf.Session(graph=graph) as sess:
                 initial_state: test_state}
         batch_acc, test_state = sess.run([accuracy, final_state], feed_dict=feed)
         test_acc.append(batch_acc)
-    print("Test accuracy: {:.3f}".format(np.mean(test_acc))) ```
+    print("Test accuracy: {:.3f}".format(np.mean(test_acc))) 
+    ```
     
 
-# Twitter
+# Tweet Me
 
 https://twitter.com/TheGabeLyfe
 
